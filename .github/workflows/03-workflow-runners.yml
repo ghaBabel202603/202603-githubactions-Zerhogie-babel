@@ -13,6 +13,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: "Mostrar SO"
+        shell: bash
         run: |
           echo "Este trabajo se ejecuta en un Runner de windows"
           echo $RUNNER_OS
