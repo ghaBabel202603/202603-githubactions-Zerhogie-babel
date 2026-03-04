@@ -1,0 +1,22 @@
+name: 04 - Uso de Actions
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+      # - name: Printing Folders
+      #   run: |
+      #     echo "Estructura de carpetas después del checkout"
+      #     ls -R
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20.x'
+      - name: Install Dependencies
+        working-directory: my-app
+        run: npm install
+  
+  
