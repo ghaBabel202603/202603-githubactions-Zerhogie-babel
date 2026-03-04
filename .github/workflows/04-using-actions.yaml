@@ -18,5 +18,8 @@ jobs:
       - name: Install Dependencies
         working-directory: my-app
         run: npm install
+      - name: Run Unit Tests
+        working-directory: my-app
+        run: npm test
   
   
