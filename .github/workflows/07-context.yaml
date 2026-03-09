@@ -1,0 +1,26 @@
+name: 07 - Contexts
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Enable debug mode'
+        required: false
+        type: boolean
+        default: false
+jobs:
+  echo-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Info
+        run: |
+          echo "Nombre del evento: ${{ github.event_name }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "SHA: ${{ github.sha }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Flujo de trabajo: ${{ github.workflow }}"
+          echo "ID de ejecución: ${{ github.run_id }}"
+          echo "Número de ejecución: ${{ github.run_number }}"
+      - name: Retrive Variable
+        run: 
+          echo "vars.debug: ${{ vars.MY_VAR }}"
