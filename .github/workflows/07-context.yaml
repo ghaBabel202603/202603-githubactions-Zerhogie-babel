@@ -22,5 +22,4 @@ jobs:
           echo "ID de ejecución: ${{ github.run_id }}"
           echo "Número de ejecución: ${{ github.run_number }}"
       - name: Retrive Variable
-        run: 
-          echo "${{ var.MY_VAR }}"
+        run: echo "${{ var.MY_VAR }}"
