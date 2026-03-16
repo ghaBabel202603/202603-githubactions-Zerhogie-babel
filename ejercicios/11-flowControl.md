@@ -4,7 +4,7 @@ Explorar en detalle cómo definir dependencias entre trabajos, así como cómo e
 ## Tareas
 
 1. Crear un archivo llamado 11-execution-flow.yml en la carpeta .github/workflows en la raíz del repositorio. Los datos del workflow deben ser los siguientes:
-    - nombre: 10 - Controlling the Execution Flow
+    - nombre: 11 - Controlling the Execution Flow
     - desencadentes:
         - workflow_dispatch: el desencadenador workflow_dispatch debe recibir un único input llamado pass-unit-tests, de tipo booleano y con un valor predeterminado de false. 
     - Trabajos:
