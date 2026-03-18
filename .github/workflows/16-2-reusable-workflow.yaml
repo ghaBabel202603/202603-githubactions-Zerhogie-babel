@@ -5,7 +5,7 @@ jobs:
   deploy:
     uses: ./.github/workflows/16-1-reusable-workflow.yaml
     with:
-      target-directory: 15-artifacts/react-app
+      target-directory: my-app
 
   print-outputs:
     runs-on: ubuntu-latest
